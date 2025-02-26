@@ -12,7 +12,7 @@ This is a remake of my old Covid project [Card Party](https://github.com/techenb
 - [ ] Join a game
 - [ ] Begin a game
 - [ ] Deal cards to players
-- [ ] Play a game
+- [ ] Play a round
     - [ ] Pickup top card or from deck
     - [ ] Reorder hand
     - [ ] Discard
@@ -20,4 +20,8 @@ This is a remake of my old Covid project [Card Party](https://github.com/techenb
     - [ ] Move to next player
     - [ ] Buy
     - [ ] 🔥 Hot card
-    
+    - [ ] End round with when player discards last hand
+    - [ ] Tally points
+- [ ] Advance to next round
+    - [ ] same game play but with different objective
+- [ ] End game
