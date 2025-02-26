@@ -11,7 +11,7 @@ it('can render', function () {
 it('can be seen', function () {
     $user = User::factory()->create();
 
-   $this->actingAs($user)
+    $this->actingAs($user)
         ->get(route('dashboard'))
         ->assertSeeVolt('games.create');
 });
@@ -25,6 +25,6 @@ it('can create a game', function () {
         ->assertRedirect();
 
     $this->assertDatabaseHas('games', [
-        'owner_id' => $user->id
+        'owner_id' => $user->id,
     ]);
 });
