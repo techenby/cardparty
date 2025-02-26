@@ -14,6 +14,9 @@ Route::view('dashboard', 'dashboard')
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
+    Volt::route('games/create', 'games.create')->name('games.create');
+    Volt::route('games/{game}', 'games.show')->name('games.show');
+
     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
     Volt::route('settings/password', 'settings.password')->name('settings.password');
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
