@@ -8,7 +8,7 @@ This is a remake of my old Covid project [Card Party](https://github.com/techenb
 - [x] Install Duster
 - [ ] Install Verbs
 - [ ] Install Reverb/Echo
-- [ ] Create a game
+- [x] Create a game
 - [ ] Join a game
 - [ ] Begin a game
 - [ ] Deal cards to players
