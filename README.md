@@ -1,6 +1,9 @@
 # Card Party
 
 This is a remake of my old Covid project [Card Party](https://github.com/techenby/cardparty-og), but this time with packages that didn't exist five years ago.
+I'm streaming progress on this app on [Twitch](https://www.twitch.tv/techenby/schedule).
+
+We're currently implementing playing my family's favorite card game, Progressive Rummy. Look at the old readme for how to play the game and the various rules.
 
 ## Todo
 
