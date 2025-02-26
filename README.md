@@ -28,3 +28,22 @@ We're currently implementing playing my family's favorite card game, Progressive
 - [ ] Advance to next round
     - [ ] same game play but with different objective
 - [ ] End game
+
+## ERD
+
+```mermaid
+erDiagram
+    GAME |o--|{ USER : "user hasMany games"
+    GAME {
+        bigint id PK
+        bigint owner_id FK
+    }
+    USER {
+        int id PK
+        string name
+        string email
+        timestamp email_verified_at
+        string password
+        string remember_token
+    }
+```
