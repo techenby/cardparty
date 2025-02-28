@@ -12,6 +12,6 @@ new class extends Component {
 <div>
     <flux:input icon="link" :value="route('games.show', $game)" class="max-w-md" readonly copyable/>
 
-    <x-avatar :name="auth()->user()->name" />
+    <x-avatar :name="$game->owner->name" />
 
 </div>

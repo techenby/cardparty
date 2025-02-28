@@ -16,8 +16,7 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/flux": "^2.0",
-        "livewire/volt": "^1.6.7",
-        "hirethunk/verbs": "*"
+        "livewire/volt": "^1.6.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -31,12 +30,6 @@
         "pestphp/pest-plugin-laravel": "^3.1",
         "tightenco/duster": "^3.1"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/edgrosvenor/verbs.git"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
