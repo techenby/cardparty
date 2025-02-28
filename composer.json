@@ -1,11 +1,14 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/livewire-starter-kit",
+    "name": "techenby/cardparty",
     "type": "project",
-    "description": "The official Laravel starter kit for Livewire.",
+    "description": "A virtual way to play a family card game.",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "livewire",
+        "volt",
+        "verbs"
     ],
     "license": "MIT",
     "require": {
