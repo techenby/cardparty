@@ -9,7 +9,7 @@ We're currently implementing playing my family's favorite card game, Progressive
 
 - [x] Set up Laravel 12 application
 - [x] Install Duster
-- [ ] Install Verbs
+- [x] Install Verbs
 - [ ] Install Reverb/Echo
 - [x] Create a game
 - [ ] Join a game
