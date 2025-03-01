@@ -14,5 +14,5 @@
     'bg-zinc-200 rounded-md ' . $size,
     'px-1 pt-2' => $style !== 'heads'
 ])>
-    <img src="https://robohash.org/{{ str($name)->slug() }}.png?set={{ $set }}" />
+    <img src="https://robohash.org/{{ str($name)->slug() }}.png?set={{ $set }}" alt="{{ $name }}" />
 </div>

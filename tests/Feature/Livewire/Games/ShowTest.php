@@ -31,3 +31,20 @@ it('can be seen', function () {
         ->get(route('games.show', $game))
         ->assertOk();
 });
+
+it('can show all players', function () {
+    $game = Game::factory()
+        ->hasAttached(
+            User::factory()->state(['name' => 'Law']),
+            ['is_owner' => true]
+        )
+        ->hasAttached(
+            User::factory()->state(['name' => 'Chopper']),
+            ['is_owner' => false]
+        )
+        ->create();
+
+    Volt::test('games.show', ['game' => $game])
+        ->assertSee('Law')
+        ->assertSee('Chopper');
+});
