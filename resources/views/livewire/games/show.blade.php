@@ -13,7 +13,7 @@ new class extends Component {
     <flux:input icon="link" :value="route('games.show', $game)" class="max-w-md" readonly copyable/>
 
     <div class="flex mt-8">
-        <x-avatar :name="$game->owner->name" size="size-12" style="heads" />
+        <x-avatar :name="$game->owner()->name" size="size-12" style="heads" />
     </div>
 
 </div>

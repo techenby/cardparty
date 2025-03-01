@@ -6,7 +6,9 @@ use Livewire\Volt\Component;
 new class extends Component {
     public function create()
     {
-        $game = auth()->user()->games()->create();
+        $game = Game::create();
+
+        auth()->user()->games()->attach($game->id, ['is_owner' => true]);
 
         return to_route('games.show', $game);
     }

@@ -18,7 +18,7 @@ class GameFactory extends Factory
     public function definition(): array
     {
         return [
-            'owner_id' => User::factory(),
+            //
         ];
     }
 }

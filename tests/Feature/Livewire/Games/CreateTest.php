@@ -24,7 +24,6 @@ it('can create a game', function () {
         ->call('create')
         ->assertRedirect();
 
-    $this->assertDatabaseHas('games', [
-        'owner_id' => $user->id,
-    ]);
+    $this->assertCount(1, $user->games);
+    $this->assertTrue((bool) $user->games->first()->pivot->is_owner);
 });
