@@ -10,7 +10,7 @@ new class extends Component {
 }; ?>
 
 <div>
-    <flux:input icon="link" :value="route('games.show', $game)" class="max-w-md" readonly copyable/>
+    <flux:input icon="link" :value="route('games.join', $game)" class="max-w-md" readonly copyable/>
 
     <div class="flex mt-8">
         @foreach($game->users as $user)
