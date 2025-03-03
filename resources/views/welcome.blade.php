@@ -13,13 +13,13 @@
                             <x-app-logo />
                         </div>
                         <div class="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-                            <h1 class="font-mono text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+                            <h1 class="font-mono text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 text-white sm:text-8xl/[0.8] md:text-9xl/[0.8]">
                                 Would you like to play a game of cards?
                             </h1>
 
                             <div class="mt-12">
-                                <flux:button variant="ghost">Login</flux:button>
-                                <flux:button variant="primary">Register</flux:button>
+                                <flux:button variant="ghost" :href="route('login')">Login</flux:button>
+                                <flux:button variant="primary" :href="route('register')">Register</flux:button>
                             </div>
                         </div>
                     </div>
