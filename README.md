@@ -9,10 +9,12 @@ We're currently implementing playing my family's favorite card game, Progressive
 
 - [x] Set up Laravel 12 application
 - [x] Install Duster
-- [x] Install Verbs
+- [ ] Install Verbs
 - [ ] Install Reverb/Echo
 - [x] Create a game
-- [ ] Join a game
+- [x] Join a game
+  - [x] Don't re-add user if they've already been added
+  - [x] Why no redirect for new user
 - [ ] Begin a game
 - [ ] Deal cards to players
 - [ ] Play a round
