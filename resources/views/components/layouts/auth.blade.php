@@ -13,17 +13,6 @@
                     </span>
             {{ config('app.name', 'Laravel') }}
         </a>
-
-        @php
-            [$message, $author] = str(Illuminate\Foundation\Inspiring::quotes()->random())->explode('-');
-        @endphp
-
-        <div class="relative z-20 mt-auto">
-            <blockquote class="space-y-2">
-                <p class="text-lg">&ldquo;{{ trim($message) }}&rdquo;</p>
-                <footer class="text-sm">{{ trim($author) }}</footer>
-            </blockquote>
-        </div>
     </div>
     <div class="w-full lg:p-8">
         <div class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
