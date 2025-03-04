@@ -13,8 +13,8 @@
                             <x-app-logo />
                         </div>
                         <div class="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-                            <h1 class="font-mono text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 text-white sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-                                Would you like to play a game of cards?
+                            <h1 class="font-mono text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 dark:text-white sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+                                Shall we play a game?
                             </h1>
 
                             <div class="mt-12">
