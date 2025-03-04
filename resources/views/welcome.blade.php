@@ -3,10 +3,10 @@
 <head>
     @include('partials.head')
 </head>
-<body class="min-h-screen bg-white dark:bg-zinc-800">
+<body class="min-h-screen bg-white dark:bg-zinc-950">
         <div class="relative">
             <div class="overflow-hidden h-screen">
-                <div class="bg-i-like-cards absolute inset-2 rounded-4xl ring-1 ring-black/5 ring-inset"></div>
+                <div class="bg-i-like-cards absolute inset-2 rounded-4xl ring-1 ring-black/5 ring-inset inset-shadow-sm inset-shadow-teal-500/50"></div>
                 <div class="relative px-6 lg:px-8 mt-8">
                     <div class="mx-auto max-w-2xl lg:max-w-7xl">
                         <div class="ml-2 mr-5 flex items-center space-x-2 lg:ml-0" wire:navigate>
