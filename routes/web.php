@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\JoinController;
-use App\Models\Game;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
