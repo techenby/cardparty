@@ -13,7 +13,7 @@ new class extends Component {
     <flux:input icon="link" :value="route('games.join', $game)" class="max-w-md" readonly copyable/>
 
     <div class="flex mt-8">
-        @foreach($game->users as $user)
+        @foreach ($game->users as $user)
             <x-avatar :name="$user->name" size="size-12" style="heads" />
         @endforeach
     </div>
