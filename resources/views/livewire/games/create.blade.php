@@ -1,14 +1,19 @@
 <?php
 
+use App\Events\GameStarted;
+use App\Events\PlayerJoinedGame;
 use App\Models\Game;
 use Livewire\Volt\Component;
 
 new class extends Component {
     public function create()
     {
-        $game = Game::create();
+        $game = GameStarted::commit();
 
-        auth()->user()->games()->attach($game->id, ['is_owner' => true]);
+//        PlayerJoinedGame::fire(
+//            game_id: $game->id,
+//            player_id: auth()->id(),
+//        ));
 
         return to_route('games.show', $game);
     }
