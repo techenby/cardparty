@@ -9,7 +9,6 @@
     }
 @endphp
 
-{{--class="bg-zinc-200 rounded-md px-1 pt-2 {{ $size }}"--}}
 <div @class([
     'bg-zinc-200 rounded-md ' . $size,
     'px-1 pt-2' => $style !== 'heads'
