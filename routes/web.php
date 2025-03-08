@@ -17,6 +17,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Volt::route('games/create', 'games.create')->name('games.create');
     Volt::route('games/{game}', 'games.show')->name('games.show');
     Route::get('games/{game}/join', JoinController::class)->name('games.join');
+    Volt::route('games/{game}/play', 'games.play')->name('games.play');
 
     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
     Volt::route('settings/password', 'settings.password')->name('settings.password');

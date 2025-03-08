@@ -7,6 +7,11 @@ use Livewire\Volt\Component;
 
 new class extends Component {
     public Game $game;
+
+    public function begin()
+    {
+        return to_route('games.play', $this->game);
+    }
 }; ?>
 
 <div wire:poll.visible">
