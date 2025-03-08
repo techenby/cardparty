@@ -9,7 +9,7 @@ new class extends Component {
     public Game $game;
 }; ?>
 
-<div>
+<div wire:poll.visible">
     <x-app-header title="Assemble Players">
         <flux:button wire:click="begin" :disabled="$game->users->count() < 3">Begin Game</flux:button>
     </x-app-header>
