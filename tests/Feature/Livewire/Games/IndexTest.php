@@ -1,9 +1,18 @@
 <?php
 
+use App\Models\User;
 use Livewire\Volt\Volt;
 
 it('can render', function () {
-    $component = Volt::test('games.index');
+    Volt::actingAs(User::factory()->create())
+        ->test('games.index')
+        ->assertSee('Games');
+});
 
-    $component->assertSee('');
+it('can be seen', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user)
+        ->get(route('games.index'))
+        ->assertSee('Games');
 });

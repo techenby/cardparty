@@ -12,7 +12,7 @@ it('can be seen', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user)
-        ->get(route('dashboard'))
+        ->get(route('games.index'))
         ->assertSeeVolt('games.create');
 });
 
