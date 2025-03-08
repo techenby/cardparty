@@ -12,7 +12,7 @@
     </a>
 
     <flux:navbar class="-mb-px max-lg:hidden">
-        <flux:navbar.item icon="layout-grid" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
+        <flux:navbar.item icon="layout-grid" :href="route('games.index')" :current="request()->routeIs('games.index')" wire:navigate>
             {{ __('Dashboard') }}
         </flux:navbar.item>
     </flux:navbar>
@@ -80,7 +80,7 @@
 
     <flux:navlist variant="outline">
         <flux:navlist.group heading="Platform">
-            <flux:navlist.item icon="layout-grid" href="{{ route('dashboard') }}" :current="request()->routeIs('dashboard')" wire:navigate>
+            <flux:navlist.item icon="layout-grid" :href="route('games.index')" :current="request()->routeIs('games.index')" wire:navigate>
                 {{ __('Dashboard') }}
             </flux:navlist.item>
         </flux:navlist.group>

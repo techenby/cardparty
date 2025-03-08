@@ -8,16 +8,16 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+Route::redirect('dashboard', 'games')->name('dashboard');
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
+    Volt::route('games', 'games.index')->name('games.index');
     Volt::route('games/create', 'games.create')->name('games.create');
     Volt::route('games/{game}', 'games.show')->name('games.show');
     Route::get('games/{game}/join', JoinController::class)->name('games.join');
+    Volt::route('games/{game}/play', 'games.play')->name('games.play');
 
     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
     Volt::route('settings/password', 'settings.password')->name('settings.password');

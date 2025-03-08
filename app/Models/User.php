@@ -40,6 +40,13 @@ class User extends Authenticatable
             ->implode('');
     }
 
+    public function firstName(): string
+    {
+        return Str::of($this->name)
+            ->explode(' ')
+            ->first();
+    }
+
     /** @return array<string, string> */
     protected function casts(): array
     {
