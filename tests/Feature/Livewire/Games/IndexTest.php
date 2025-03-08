@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Game;
 use App\Models\User;
 use Livewire\Volt\Volt;
 
@@ -15,4 +16,18 @@ it('can be seen', function () {
     $this->actingAs($user)
         ->get(route('games.index'))
         ->assertSee('Games');
+});
+
+it('can show users games', function () {
+    $user = User::factory()
+        ->hasAttached(
+            Game::factory(),
+            ['is_owner' => true]
+        )
+        ->create(['name' => 'Monkey D. Luffy']);
+
+    Volt::actingAs($user)
+        ->test('games.index')
+        ->assertSee('Progressive Rummy')
+        ->assertSee('Monkey D. Luffy');
 });
