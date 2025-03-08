@@ -18,7 +18,7 @@ new class extends Component {
 
     <ul role="list" class="mt-8 divide-y divide-gray-100 dark:divide-white/10 overflow-hidden bg-white dark:bg-white/10 ring-1 shadow-xs ring-gray-900/5 dark:ring-white/25 sm:rounded-xl">
         @foreach ($this->games as $game)
-        <li class="relative flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 dark:hover:bg-gray-700 sm:px-6">
+        <li :wire:key="$game->id" class="relative flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 dark:hover:bg-gray-700 sm:px-6">
             <div class="flex min-w-0 gap-x-4">
                 <div class="min-w-0 flex-auto">
                     <p class="text-sm/6 font-semibold text-gray-900 dark:text-white">

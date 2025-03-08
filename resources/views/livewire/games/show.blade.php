@@ -19,8 +19,8 @@ new class extends Component {
 
         <div class="flex gap-4 mt-8">
             @foreach ($game->users as $user)
-                <div>
-                    <x-avatar :name="$user->name" size="size-12" style="heads" />
+                <div :wire:key="$user->id">
+                    <x-avatar :name="$user->name" size="size-12" style="heads"/>
                     <p class="text-center mt-1">{{ $user->firstName() }}</p>
                 </div>
             @endforeach
