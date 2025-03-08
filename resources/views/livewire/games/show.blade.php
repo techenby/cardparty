@@ -10,12 +10,20 @@ new class extends Component {
 }; ?>
 
 <div>
-    <flux:input icon="link" :value="route('games.join', $game)" class="max-w-md" readonly copyable/>
+    <x-app-header title="Assemble Players">
+        <flux:button wire:click="begin" :disabled="$game->users->count() < 3">Begin Game</flux:button>
+    </x-app-header>
 
-    <div class="flex mt-8">
-        @foreach ($game->users as $user)
-            <x-avatar :name="$user->name" size="size-12" style="heads" />
-        @endforeach
+    <div class="mt-8">
+        <flux:input icon="link" :value="route('games.join', $game)" class="max-w-md" readonly copyable/>
+
+        <div class="flex gap-4 mt-8">
+            @foreach ($game->users as $user)
+                <div>
+                    <x-avatar :name="$user->name" size="size-12" style="heads" />
+                    <p class="text-center mt-1">{{ $user->firstName() }}</p>
+                </div>
+            @endforeach
+        </div>
     </div>
-
 </div>

@@ -10,7 +10,7 @@
 @endphp
 
 <div @class([
-    'bg-zinc-200 rounded-md ' . $size,
+    'border bg-gray-200 rounded-md dark:bg-white/10 dark:border-white/10 ' . $size,
     'px-1 pt-2' => $style !== 'heads'
 ])>
     <img src="https://robohash.org/{{ str($name)->slug() }}.png?set={{ $set }}" alt="{{ $name }}" />
